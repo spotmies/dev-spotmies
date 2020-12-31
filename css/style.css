@@ -572,6 +572,31 @@ footer ul li:hover .fab{
 
 @media  screen and (max-width: 450px) {
 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .splash {
+        width: 100%;
+    }
+
+    .float-btn {
+        display: none;
+    }
+
+    .container-fluid {
+        margin: 0;
+        width: 100%;
+        padding: 0; 
+    }
+
     header {
         width: 100%;
         font-size: 11px;
@@ -615,13 +640,19 @@ footer ul li:hover .fab{
 
    .carousel {
        margin-top: -240px;
+       margin-left: 12%;
        width: 280px;
        height: 300px;
        text-align: center;
    }
 
+   .home-container img {
+       margin-left: 12%;
+   }
+
    .home-container {
-       margin-left: 30px;
+       
+       margin: 0;
    }
 
    .carousel-inner {
@@ -639,8 +670,21 @@ footer ul li:hover .fab{
 
    /*portfolio*/
    .portfolio {
-       margin-top: 30px;
+       margin-top: 20px;
        margin-bottom: 30px;
+   }
+
+   .hover {
+       padding-left: 10px;
+   }
+
+   .hover h3 {
+       margin-top: 5px;
+       margin-left: 14px;
+   }
+
+   .portfolio .hover ul li{
+       margin-left: 10px;
    }
 
    .portfolio .card {
@@ -657,6 +701,7 @@ footer ul li:hover .fab{
 
    .portfolio h2 {
        font-size: 32px;
+       padding-top: 15px;
        font-weight: 700;
    }
 
@@ -664,15 +709,34 @@ footer ul li:hover .fab{
        width: 350px;
    }
 
+   .col-lg-4 {
+       height: 350px;
+       width: 90%;
+       margin-bottom: 80px;
+   }
+
+   .row {
+       width: 100%;
+       margin: 0;
+   }
    /*about*/
 
    .about-ms {
        height: 500px;
+       padding: 0;
+       margin-bottom: 10px;
+       width: 100%;
    }
 
    .about-container {
        width: 100%;
    }
+
+   .about-container p {
+    padding: 10px;
+   
+   }
+      
 
    .about-ms img {
        height: 400px;
@@ -709,7 +773,15 @@ footer ul li:hover .fab{
        height: 450px;
    }
 
+   .projects .col-lg-4 {
+       margin-bottom: 130px;
+   }
+
    /*contact*/
+
+   .ct-form {
+       margin-left: 5px;
+   }
 
    .contact {
        height: 700px;
@@ -722,6 +794,11 @@ footer ul li:hover .fab{
        display: none;
        width: 350px;
        z-index: -10;
+   }
+
+   .contact-container {
+       width: 100%;
+       
    }
 
    .contact-container h2 {
@@ -741,8 +818,13 @@ footer ul li:hover .fab{
    }
 
    .contact form {
-       width: 350px;
+       width: 98%;
        /* justify-items: center; */
+   }
+
+   .form-control {
+       width: 100%;
+       margin-right: 0;
    }
 
    .form-group {

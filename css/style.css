@@ -26,7 +26,7 @@ html {
     display: block;
 } */
 .anch {
-    height: 50px;
+    height: 0px;
 }
 .splash {
    position: fixed;

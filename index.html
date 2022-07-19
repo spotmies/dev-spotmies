@@ -166,7 +166,9 @@
 <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 </ol> -->
         </div>
-        <img src="images/work-time.svg" alt="" />
+        <div>
+          <img src="images/work-time.svg" alt="" />
+        </div>
       </div>
     </section>
 
@@ -176,8 +178,8 @@
     <section class="portfolio">
       <h2 class="text-center">Our Services</h2>
       <div class="container-fluid portfolio-container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="" id="screen">
+          <div class="col-lg-4 col-md-6 col-sm-12 cards">
             <div class="card text-center">
               <div class="card-header">Web Development</div>
               <div class="card-body">
@@ -280,7 +282,7 @@
     <section class="portfolio projects" id="Projects">
       <h2 class="text-center">Under Development Projects</h2>
       <div class="container-fluid portfolio-container">
-        <div class="row">
+        <div class="" id="screen1">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card text-center">
               <div class="card-header">Nandikrushi</div>
@@ -346,7 +348,7 @@
       <!-- ---------------------------- NFT projects ----------------------------- -->
 
       <div class="container-fluid portfolio-container">
-        <div class="row">
+        <div class="" id="screen2">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card text-center">
               <div class="card-header">Project HEX</div>
@@ -420,7 +422,7 @@
       </div>
 
       <div class="container-fluid portfolio-container">
-        <div class="row">
+        <div class="" id="screen3">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card text-center">
               <div class="card-header">A Square go karting</div>
@@ -532,7 +534,7 @@
       </div>
 
       <div class="container-fluid portfolio-container">
-        <div class="row">
+        <div class="" id="screen4">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card text-center">
               <div class="card-header">Spotmies</div>
@@ -979,6 +981,22 @@ function onScroll(event){
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+
+    <script>
+      if (screen.width > 450) {
+        document.getElementById("screen").className = "row";
+        document.getElementById("screen1").className = "row";
+        document.getElementById("screen2").className = "row";
+        document.getElementById("screen3").className = "row";
+        document.getElementById("screen4").className = "row";
+      } else {
+        document.getElementById("screen").className = "col";
+        document.getElementById("screen1").className = "col";
+        document.getElementById("screen2").className = "col";
+        document.getElementById("screen3").className = "col";
+        document.getElementById("screen4").className = "col";
+      }
     </script>
 
     <!-- jQuery and JS bundle w/ Popper.js -->

@@ -5,6 +5,10 @@ body {
   position: relative;
 }
 
+#particles-js {
+  height: 100% !important;
+}
+
 /* section {
     overflow-y: scroll;
 } */
@@ -154,7 +158,8 @@ header p {
 
 .home-container {
   /* width: 1280px; */
-  margin-left: 100px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #particles-js {
@@ -200,7 +205,6 @@ header p {
 .about-ms,
 .contact {
   background: #0549a8dc;
-
   height: 700px;
   margin: 100px auto;
 }
@@ -219,6 +223,8 @@ header p {
 
 .about-container {
   padding-top: 100px;
+  justify-content: center;
+  text-align: justify;
   display: inline-flex;
 }
 
@@ -447,6 +453,7 @@ h3 {
 
 .contact-container {
   display: inline-flex;
+  justify-content: center;
 }
 
 .contact-container img {
@@ -640,13 +647,17 @@ footer ul li:hover .fab {
   /*home pic*/
 
   .home-pic {
-    height: 650px;
+    height: 100vh;
   }
+
+  /* .cards {
+    margin-left: calc(100vw - 97%);
+  } */
 
   .home-pic img {
     height: 300px;
     width: 300px;
-    margin-top: -570px;
+    /* margin-top: -570px; */
     float: left;
   }
 
@@ -681,7 +692,7 @@ footer ul li:hover .fab {
   }
 
   .carousel-item h1 {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 700;
   }
 
@@ -717,9 +728,9 @@ footer ul li:hover .fab {
   }
 
   .portfolio h2 {
-    font-size: 32px;
+    /* font-size: 32px; */
     padding-top: 15px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .hover-p1,
@@ -754,6 +765,7 @@ footer ul li:hover .fab {
 
   .about-container p {
     padding: 10px;
+    text-align: justify;
   }
 
   .about-ms img {

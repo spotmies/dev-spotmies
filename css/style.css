@@ -40,6 +40,12 @@ html {
   z-index: 800;
   line-height: 90vh;
 }
+.nav-logo {
+  height: 40px;
+}
+.navbar-container {
+  min-height: 70px;
+}
 
 .splash h1 {
   /* margin-top: 300px; */
@@ -579,6 +585,13 @@ footer ul li:hover .fab {
   * {
     margin: 0;
     padding: 0;
+  }
+
+  .nav-logo {
+    height: 30px;
+  }
+  .navbar-container {
+    min-height: 60px !important;
   }
 
   body {
